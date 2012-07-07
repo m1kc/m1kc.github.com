@@ -5,6 +5,17 @@ home: true
 ---
 
 {% for item in site.categories.news %}
+<table>
+	<tr>
+		<td><small>{{ item.date | date: "%d.%m.%Y" }}</small></td>
+		<td><big><b>{{ item.title }}</b></big></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>{{ item.content }}</td>
+	</tr>
+</table>
+
 <div>
 	<div style="border-bottom: 1px solid gray;">
 		<div style="float: right;"><small>{{ item.date | date: "%d.%m.%Y" }}</small></div>
