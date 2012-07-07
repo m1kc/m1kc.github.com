@@ -43,9 +43,9 @@
 
 				</td>
 				<td valign="top" style="padding: 20px; min-width: 300px;" rowspan="2">
-					{% if page.url != '/' %}
+					{% unless page.home %}
 						<a href="/">Главная</a> &raquo; {{ page.title }}<hr />
-					{% endif %}
+					{% endunless %}
 					{{ content }}
 				</td>
 				<td style="width: 10%;" id="rightline" rowspan="2">
