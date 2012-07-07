@@ -5,9 +5,9 @@ home: true
 ---
 
 {% for item in site.categories.news %}
-<table>
+<table style="margin-bottom: 20px;">
 	<tr>
-		<td><small>{{ item.date | date: "%d.%m.%Y" }}</small></td>
+		<td style="padding-right: 10px;"><small>{{ item.date | date: "%d.%m.%Y" }}</small></td>
 		<td><big><b>{{ item.title }}</b></big></td>
 	</tr>
 	<tr>
@@ -15,15 +15,4 @@ home: true
 		<td>{{ item.content }}</td>
 	</tr>
 </table>
-
-<div>
-	<div style="float: left; margin-right: 10px; height: 100%;">
-		<small>{{ item.date | date: "%d.%m.%Y" }}</small>
-	</div>
-	<div>
-		<div><big><b>{{ item.title }}</b></big></div>
-		<div>{{ item.content }}</div>
-	</div>
-</div>
-
 {% endfor %}
