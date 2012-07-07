@@ -3,25 +3,23 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>m1kc project</title>
- <!-- FIXME <link href="http://tom.preston-werner.com/atom.xml" rel="self"/> -->
- <!-- FIXME <link href="http://tom.preston-werner.com/"/> -->
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <!-- FIXME <id>http://tom.preston-werner.com/</id> -->
- <author>
-   <name>m1kc</name>
-   <email>m1kc@yandex.ru</email>
- </author>
+	<title>m1kc project</title>
+	<link href="http://m1kc.tk/atom.xml" rel="self"/>
+	<link href="http://m1kc.tk/" />
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://m1kc.tk/</id>
+	<author>
+		<name>m1kc</name>
+		<email>m1kc@yandex.ru</email>
+	</author>
 
- {% for post in site.posts %}
- <entry>
-   <title>{{ post.title }}</title>
-   <!-- FIXME <link href="http://tom.preston-werner.com{{ post.url }}"/> -->
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <!-- FIXME <id>http://tom.preston-werner.com{{ post.id }}</id> -->
-   <content type="html">{{ post.content | xml_escape }}</content>
- </entry>
- {% endfor %}
- 
+	{% for post in site.posts %}
+	<entry>
+		<title>{{ post.title }}</title>
+		<link href="http://m1kc.tk{{ post.url }}" />
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
+		<id>http://m1kc.tk{{ post.id }}</id>
+		<content type="html">{{ post.content | xml_escape }}</content>
+	</entry>
+	{% endfor %}
 </feed>
