@@ -8,3 +8,5 @@ a.clickme:hover { text-decoration: none; color: #ff0000; border-bottom: 1px dott
 
 a.plain { text-decoration: none; color: black; border-bottom: none; }
 a.plain:hover { text-decoration: none; color: #ff0000; border-bottom: none; }
+
+span.highlight { background-color: #FFEE00; }
