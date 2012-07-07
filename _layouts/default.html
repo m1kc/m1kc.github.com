@@ -2,20 +2,110 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
-		<script src="/jquery/jquery-1.7.2.min.js"></script>
-		<script src="/bootstrap/js/bootstrap.min.js"></script>
 		<title>{{ page.title }}</title>
+		<!-- <link type="text/css" rel="stylesheet" href="[CSS_URL]" /> -->
+		<script src="/js/m1kc.js"></script>
 	</head>
-	<body>
-		<h1>{{ page.title }}</h1>
-		<hr>
-		<div>
-<!-- <content> -->
-{{ content }}
-<!-- </content> -->
-		</div>
-		<hr>
-		<small>&copy; m1kc, 2012</small>
+	<body style="background:#FFFFFF;margin:0;padding:5px;">
+
+		<!-- <header> -->
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 20px 10px; border-bottom: 1px solid gray;">
+			<tr>
+				<td align="left">
+					<div style="font-size: 24pt; font-family: serif;"><a href="/" class="plain">m1kc&nbsp;project</a></div>
+				</td>
+				<td align="right" >
+					<small>
+						<div id="datetime">
+							$WDAY$, $DATE$, $TIME$
+							<?if($RSS_LINK$)?> | <a href="$RSS_LINK$">RSS</a><?endif?> | <a href="javascript://" class="clickme" onclick="printable(this);">Версия для печати</a>
+						</div>
+						<?if($USER_LOGGED_IN$)?>
+							You logged in as <b>$USERNAME$</b> | Group &laquo;$USER_GROUP$&raquo; | <a href="$PERSONAL_PAGE_LINK$">Profile page</a> | <a href="$LOGOUT_LINK$">Log out</a>
+						<?else?>
+							<a href="$REGISTER_LINK$">Register now</a> | <a class="clickme" href="$LOGIN_LINK$">Log in</a>
+						<?endif?>
+					</small>
+				</td>
+			</tr>
+		</table>
+		<!-- </header> -->
+
+		<!-- <middle> -->
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td valign="top" style="width: 20%; padding: 20px;" id="leftline">
+
+					<!-- <container> -->
+
+					<!-- <block> -->
+					CONTENT<br /><br />
+					<!-- </block> -->
+
+					<!-- </container> -->
+
+				</td>
+				<td valign="top" style="padding: 20px; min-width: 300px;" rowspan="2">
+					<?if($MODULE_ID$='index')?>
+						<?ifnot($URI_ID$='page1')?>
+							<a href="/">Главная</a> &raquo; $MODULE_NAME$<hr />
+						<?endif?>
+					<?endif?>
+					{{ content }}
+				</td>
+				<td style="width: 10%;" id="rightline" rowspan="2">
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td id="leftline2" valign="bottom">
+					<?if($ONLINE_COUNTER$)?><small>$ONLINE_COUNTER$$ONLINE_USERS_LIST$</small><br /><br /><?endif?>
+					<!-- Yandex.Metrika counter --><script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script><div style="display:none;"><script type="text/javascript">try { var yaCounter1055392 = new Ya.Metrika({id:1055392, enableAll: true, webvisor:true});} catch(e) { }</script></div><noscript><div><img src="//mc.yandex.ru/watch/1055392" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+					$COUNTER$<br />
+					<a class="plain" href="javascript://" onclick="new _uWnd('clustrMap','ClustrMaps',850,300,{autosize:1,autosizeonimages:1,minh:300},'<img src=http://www4.clustrmaps.com/ru/stats/maps-clusters/m1kc.ucoz.ru-world.jpg /><br><img src=http://www4.clustrmaps.com/ru/stats/maps-no_clusters/m1kc.ucoz.ru-world.jpg /><br><a href=http://www4.clustrmaps.com/counter/maps.php?url=http://m1kc.ucoz.ru target=_blank >Страница статистики</a>');" id="clustrMapsLink"><img src="http://www4.clustrmaps.com/counter/index2.php?url=http://m1kc.ucoz.ru" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='http://www2.clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://www2.clustrmaps.com';" /></a>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+		</table>
+		<!-- </middle> -->
+
+		<!-- <footer> -->
+		<table width="100%" cellpadding="0" cellspacing="0" style="border-top: 1px solid gray; margin-top: 2px; padding-top: 3px;">
+			<tr>
+				<td>
+					<script type="text/javascript" src="/orphus/orphus.js"></script>
+					<div style="display:none;"><a href="http://orphus.ru" id="orphus" target="_blank"><img alt="Система Orphus" src="/orphus/orphus.gif" border="0" width="72" height="24" /></a></div>
+					<small>
+						[COPYRIGHT]. $POWERED_BY$.<br />Заметили опечатку? Выделите её&nbsp;мышкой и&nbsp;нажмите <b>Ctrl+Enter</b>. Спасибо за&nbsp;помощь. [Система <a href="http://orphus.ru">Orphus</a>]
+					</small>
+				</td>
+				<td width="10%">
+					&nbsp;
+				</td>
+				<td align="right" valign="middle">
+					<form action="/search/" method="get" style="margin: 0px;"><input type="text" placeholder="поиск по сайту" size="30" maxlength="200" name="q"><input type="submit" value="Найти" name="sfSbm"></form>
+				</td>
+			</tr>
+		</table>
+		<!-- </footer> -->
+
 	</body>
 </html>
+
+<!-- <popup> -->
+<table border="0" cellpadding="2" cellspacing="1" style="background:#A9B8C2;" width="100%">
+	<tr>
+		<td style="background:#D4DFF7;" align="center">
+			<b>[TITLE]</b>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" style="background:#F4F4F4;padding:5px;">
+			[BODY]
+		</td>
+	</tr>
+</table>
+<!-- </popup> -->
