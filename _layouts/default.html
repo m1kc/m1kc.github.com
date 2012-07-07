@@ -43,11 +43,9 @@
 
 				</td>
 				<td valign="top" style="padding: 20px; min-width: 300px;" rowspan="2">
-					<?if($MODULE_ID$='index')?>
-						<?ifnot($URI_ID$='page1')?>
-							<a href="/">Главная</a> &raquo; $MODULE_NAME$<hr />
-						<?endif?>
-					<?endif?>
+					{% unless page.home %}
+						<a href="/">Главная</a> &raquo; {{ page.title }}<hr />
+					{% endif %}
 					{{ content }}
 				</td>
 				<td style="width: 10%;" id="rightline" rowspan="2">
