@@ -11,4 +11,5 @@ a.plain:hover { text-decoration: none; color: #ff0000; border-bottom: none; }
 
 span.highlight { background-color: #FFF5AA; }
 
+*.pad5 { padding: 3px; }
 *.pad5 { padding: 5px; }
