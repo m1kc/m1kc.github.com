@@ -16,12 +16,14 @@ home: true
 	</tr>
 </table>
 
-<div style="float: left; margin-right: 10px;">
-	<small>{{ item.date | date: "%d.%m.%Y" }}</small>
-</div>
 <div>
-	<div><big><b>{{ item.title }}</b></big></div>
-	<div>{{ item.content }}</div>
+	<div style="float: left; margin-right: 10px; height: 100%;">
+		<small>{{ item.date | date: "%d.%m.%Y" }}</small>
+	</div>
+	<div>
+		<div><big><b>{{ item.title }}</b></big></div>
+		<div>{{ item.content }}</div>
+	</div>
 </div>
 
 {% endfor %}
