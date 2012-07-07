@@ -43,7 +43,7 @@
 
 				</td>
 				<td valign="top" style="padding: 20px; min-width: 300px;" rowspan="2">
-					{% unless home %}
+					{% unless page.url=='/' %}
 						<a href="/">Главная</a> &raquo; {{ page.title }}<hr />
 					{% endif %}
 					{{ content }}
