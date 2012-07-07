@@ -6,8 +6,10 @@ home: true
 
 {% for item in site.categories.news %}
 <div>
-	<div style="float: right;"><small>{{ item.date | date: "%d.%m.%Y" }}</small></div>
-	<div><big><b>{{ item.title }}</b></big></div>
+	<div style="border-bottom: 1px solid gray;">
+		<div style="float: right;"><small>{{ item.date | date: "%d.%m.%Y" }}</small></div>
+		<div><big><b>{{ item.title }}</b></big></div>
+	</div>
 	<div>{{ item.content }}</div>
 </div>
 {% endfor %}
