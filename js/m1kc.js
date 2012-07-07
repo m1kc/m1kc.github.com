@@ -1,7 +1,6 @@
-function printable(sender)
+function printable()
 {
-	document.getElementById("leftline").style.display='none';
-	document.getElementById("leftline2").style.display='none';
-	document.getElementById("rightline").style.display='none';
-	sender.style.display='none';
+	$('#leftline').toggle();
+	$('#leftline2').toggle();
+	$('#rightline').toggle();
 }
