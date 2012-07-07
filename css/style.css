@@ -9,7 +9,7 @@ a.clickme:hover { text-decoration: none; color: #ff0000; border-bottom: 1px dott
 a.plain { text-decoration: none; color: black; border-bottom: none; }
 a.plain:hover { text-decoration: none; color: #ff0000; border-bottom: none; }
 
-span.highlight { background-color: #FFF5AA; }
+span.highlight { background-color: #E9E9E9; }
 
 *.pad3 { padding: 3px; }
 *.pad5 { padding: 5px; }
