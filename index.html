@@ -5,3 +5,7 @@ home: true
 ---
 <p>This is Sparta, I think.</p>
 <p>Whatever.</p>
+
+{% for item in site.categories.news %}
+{{item}}<br />
+{% endfor %}
