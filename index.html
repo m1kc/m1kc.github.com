@@ -7,5 +7,6 @@ home: true
 <p>Whatever.</p>
 
 {% for item in site.categories.news %}
-{{item}}<br />
+<div><big>{{ item.title }}</big><small>{{ item.date |  }}</small></div>
+<div>{{ item.content }}</div>
 {% endfor %}
