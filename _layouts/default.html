@@ -75,6 +75,8 @@
 					{% if page.nobreadcrumbs %}
 					{% elsif page.categories contains 'news' %}
 						<a href="/">Главная</a> &raquo; <a href="/news/">Новости</a> &raquo; {{ page.title }}<hr />
+					{% elsif page.categories contains 'blog' %}
+						<a href="/">Главная</a> &raquo; <a href="/blog/">Блог</a> &raquo; {{ page.title }}<hr />
 					{% else %}
 						<a href="/">Главная</a> &raquo; {{ page.title }}<hr />
 					{% endif %}
