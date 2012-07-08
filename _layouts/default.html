@@ -72,7 +72,10 @@
 					» <a href="/index/0-50">Прислать материал</a><br>
 				</td>
 				<td valign="top" style="padding: 20px; min-width: 300px;" rowspan="2">
-					{% unless page.home %}
+					{% if page.nobreadcrumbs %}
+					{% elsif page.categories contains 'news' %}
+						<a href="/">Главная</a> &raquo; <a href="/news/">Новости</a> &raquo; {{ page.title }}<hr />
+					{% else %}
 						<a href="/">Главная</a> &raquo; {{ page.title }}<hr />
 					{% endunless %}
 					<!-- <content> -->
