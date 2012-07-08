@@ -15,14 +15,20 @@
 		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 20px 10px; border-bottom: 1px solid gray;">
 			<tr>
 				<td align="left">
-					<div style="font-size: 24pt; font-family: serif;"><a href="/" class="plain">m1kc&nbsp;project</a></div>
+					<div style="font-size: 24pt; font-family: serif;">
+						{% if page.url == '/index.html' %}
+						m1kc&nbsp;project
+						{% else %}
+						<a href="/" class="plain">m1kc&nbsp;project</a>
+						{% endif %}
+					</div>
 				</td>
 				<td align="right" >
 					<small>
 						<img src="/img/rss-icon.png" align="texttop" />
 						RSS/Atom:
-						<a href="/atom_news.xml">новости</a>
-						<a href="/atom_blog.xml">блог</a>
+						<a href="/atom_news.xml">новости</a>,
+						<a href="/atom_blog.xml">блог</a>,
 						<a href="/atom.xml">всё подряд</a> |
 						<span class="printables"><span class="highlight pad3">Обычная версия</span> или <a href="javascript://" class="clickme" onclick="printable();">для печати</a></span>
 						<span class="printables" style="display: none;"><a href="javascript://" class="clickme" onclick="printable();">Обычная версия</a> или <span class="highlight pad3">для печати</span></span>
@@ -37,42 +43,42 @@
 			<tr>
 				<td valign="top" style="width: 20%; padding: 20px;" id="leftline">
 					<i>Программирую</i><br><br>
-					» <a href="/load/11-1-0-69">WinMobile</a><br>
-					» <a href="/load/11-1-0-84">WinMobile v.1.0 beta</a><br>
-					» <a href="/load/23-1-0-85">JustPaint</a><br>
-					» <a href="/index/0-88">XSP</a><br>
-					» <a href="/load/33-1-0-122">uRPG</a><br>
-					» <a href="/load/22-1-0-79">Diablo 2 Mobile</a><br>
-					» <a href="/load/13-1-0-72">m1kc ICQ</a><br>
-					» <a href="/load/24-1-0-86">TableView</a><br>
-					» <a href="/load/31-1-0-121">LGText</a><br>
-					» <a href="/load/2">Soft</a><br>
-					» <a href="/load/30">Soft — проба пера</a><br>
+					-» <a href="/load/11-1-0-69">WinMobile</a><br>
+					-» <a href="/load/11-1-0-84">WinMobile v.1.0 beta</a><br>
+					-» <a href="/load/23-1-0-85">JustPaint</a><br>
+					-» <a href="/index/0-88">XSP</a><br>
+					-» <a href="/load/33-1-0-122">uRPG</a><br>
+					-» <a href="/load/22-1-0-79">Diablo 2 Mobile</a><br>
+					-» <a href="/load/13-1-0-72">m1kc ICQ</a><br>
+					-» <a href="/load/24-1-0-86">TableView</a><br>
+					-» <a href="/load/31-1-0-121">LGText</a><br>
+					-» <a href="/load/2">Soft</a><br>
+					-» <a href="/load/30">Soft — проба пера</a><br>
 					<br><i>Рисую</i><br><br>
-					» <a href="/photo/3">Рисунки</a><br>
-					» <a href="/photo/2">Картинки</a><br>
+					» <a href="/art/">Рисунки</a><br>
+					» <a href="/pictures/">Картинки</a><br>
 					<br><i>Пишу</i><br><br>
 					» В <a href="/blog/">блог</a><br>
 					» В <a href="https://twitter.com/_m1kc" target="_blank">твиттер</a><br>
 					<br><i>Чешу тыкву</i><br><br>
-					» <a href="/index/0-81">Лицензия</a><br>
-					» <a href="/index/0-90">Donate</a><br>
+					-» <a href="/index/0-81">Лицензия</a><br>
+					-» <a href="/index/0-90">Donate</a><br>
 					<br><i>Раскуриваю</i><br><br>
-					» <a href="/load/12">Программы (Java)</a><br>
-					» <a href="/load/28">Исходники (Java)</a><br>
+					-» <a href="/load/12">Программы (Java)</a><br>
+					-» <a href="/load/28">Исходники (Java)</a><br>
 					<br><i>Развлекаюсь</i><br><br>
-					» <a href="/index/0-87">RSS-подборка</a><br>
-					» <a href="/index/0-25">Сервисы</a><br>
-					» <a href="/index/0-39">Развлечения</a><br>
+					-» <a href="/index/0-87">RSS-подборка</a><br>
+					-» <a href="/index/0-25">Сервисы</a><br>
+					-» <a href="/index/0-39">Развлечения</a><br>
 					<br><i>Восхищаюсь</i><br><br>
-					» <a href="/index/0-82">Death Note</a><br>
-					» <a href="/index/0-83">Transmetropolitan</a><br>
+					-» <a href="/index/0-82">Death Note</a><br>
+					-» <a href="/index/0-83">Transmetropolitan</a><br>
 					<br><i>Ну а вы можете:</i><br><br>
-					» <a href="/forum/">Пообсуждать</a><br>
-					» <a href="/index/0-11">Поболтать</a><br>
-					» <a href="/gb/">Поругаться</a><br>
-					» <a href="/index/0-9">Послать мне письмо</a><br>
-					» <a href="/index/0-50">Прислать материал</a><br>
+					-» <a href="/forum/">Пообсуждать</a><br>
+					-» <a href="/index/0-11">Поболтать</a><br>
+					-» <a href="/gb/">Поругаться</a><br>
+					-» <a href="/index/0-9">Послать мне письмо</a><br>
+					-» <a href="/index/0-50">Прислать материал</a><br>
 				</td>
 				<td valign="top" style="padding: 20px; min-width: 300px;" rowspan="2">
 					{% if page.nobreadcrumbs %}
