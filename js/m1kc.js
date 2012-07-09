@@ -7,11 +7,6 @@ function printable()
 	$('.printables').toggle();
 }
 
-function getClientHeight()
-{
-	return document.compatMode=='CSS1Compat' && !window.opera?document.documentElement.clientHeight:document.body.clientHeight;
-}
-
 function unseenArt()
 {
 	$.each($('.art img'), function(key, value){
@@ -31,7 +26,7 @@ function unseenArt()
 		}
 		else
 		{
-			value.src = value.data-src;
+			value.src = value.dataSrc;
 			value.style.visibility = 'visible';
 		}
 	});
