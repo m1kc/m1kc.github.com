@@ -14,6 +14,8 @@ function getClientHeight()
 
 function hideUnseenArt()
 {
-	alert('foo');
+	$.foreach($('.art img'), function(key, value){
+		value.style.visiblity = 'hidden';
+	});
 	setTimeout('hideUnseenArt()', 5000);
 }
