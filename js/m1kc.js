@@ -20,7 +20,7 @@ function unseenArt()
 		//$(value).height();
 		//$(window).height();
 		///value.style.visibility = 'hidden';
-		if ( $(value).position().top > $(document).scrollTop()+$(window).height() )
+		if ( $(value).position().top > ($(document).scrollTop()+$(window).height()) )
 		{
 			value.style.visibility = 'hidden';
 			alert('hiding '+value.src);
