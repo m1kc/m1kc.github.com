@@ -15,20 +15,19 @@ function getClientHeight()
 function unseenArt()
 {
 	$.each($('.art img'), function(key, value){
-		//$(document).scrollTop();
-		//$(value).position().top;
-		//$(value).height();
-		//$(window).height();
+		//$(document).scrollTop()
+		//$(value).position().top
+		//$(value).height()
+		//$(window).height()
 		///value.style.visibility = 'hidden';
+		///value.style.visibility = 'visible';
 		if ( $(value).position().top > ($(document).scrollTop()+$(window).height()) )
 		{
 			value.style.visibility = 'hidden';
-			alert('hiding '+value.src);
 		}
 		else if ( $(value).position().top+$(value).height() < $(document).scrollTop() )
 		{
 			value.style.visibility = 'hidden';
-			alert('hiding '+value.src);
 		}
 		else
 		{
