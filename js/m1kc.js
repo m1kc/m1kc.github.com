@@ -9,6 +9,8 @@ function printable()
 
 function unseenArt()
 {
+	var scrollTop = $(document).scrollTop();
+	var windowHeight = $(window).height();
 	$.each($('.art img'), function(key, value){
 		//$(document).scrollTop()
 		//$(value).position().top
@@ -16,11 +18,11 @@ function unseenArt()
 		//$(window).height()
 		///value.style.visibility = 'hidden';
 		///value.style.visibility = 'visible';
-		if ( $(value).position().top > ($(document).scrollTop()+$(window).height()) )
+		if ( $(value).position().top > (scrollTop+windowHeight) )
 		{
 			//value.style.visibility = 'hidden';
 		}
-		else if ( $(value).position().top+$(value).height() < $(document).scrollTop() )
+		else if ( $(value).position().top+$(value).height() < scrollTop )
 		{
 			//value.style.visibility = 'hidden';
 		}
