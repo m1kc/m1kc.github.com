@@ -31,6 +31,7 @@ function unseenArt()
 		}
 		else
 		{
+			value.src = value.data-src;
 			value.style.visibility = 'visible';
 		}
 	});
