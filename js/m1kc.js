@@ -18,11 +18,21 @@ function unseenArt()
 		//$(document).scrollTop();
 		//$(value).position().top;
 		//$(value).height();
+		//$(window).height();
 		///value.style.visibility = 'hidden';
-		if ( ( value.style.visibility=='visible' ) && ( $(value).position().top+$(value).height() < $(document).scrollTop() ) )
+		if ( $(value).position().top > $(document).scrollTop()+$(window).height() )
 		{
 			value.style.visibility = 'hidden';
 			alert('hiding '+value.src);
+		}
+		else if ( $(value).position().top+$(value).height() < $(document).scrollTop() )
+		{
+			value.style.visibility = 'hidden';
+			alert('hiding '+value.src);
+		}
+		else
+		{
+			value.style.visibility = 'visible';
 		}
 	});
 	setTimeout('unseenArt()', 1000);
