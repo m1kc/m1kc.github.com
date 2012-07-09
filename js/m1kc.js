@@ -28,7 +28,7 @@ function unseenArt()
 		}
 		else
 		{
-			value.src = value.dataset['src'];
+			if ((!value.src)||(value.src=='')) value.src = value.dataset['src'];
 			//value.style.visibility = 'visible';
 		}
 	});
