@@ -25,5 +25,8 @@ permalink: /art/index.html
 </div>
 
 <script>
-	hideUnseenArt();
+	$.each($('.art img'), function(key, value){
+		//value.style.visibility = 'hidden';
+	});
+	unseenArt();
 </script>

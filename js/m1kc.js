@@ -12,10 +12,18 @@ function getClientHeight()
 	return document.compatMode=='CSS1Compat' && !window.opera?document.documentElement.clientHeight:document.body.clientHeight;
 }
 
-function hideUnseenArt()
+function unseenArt()
 {
 	$.each($('.art img'), function(key, value){
-		value.style.visibility = 'hidden';
+		//$(document).scrollTop();
+		//$(value).position().top;
+		//$(value).height();
+		///value.style.visibility = 'hidden';
+		if ( ( value.style.visibility=='visible' ) && ( $(value).position().top+$(value).height() < $(document).scrollTop() ) )
+		{
+			value.style.visibility = 'hidden';
+			alert('hiding '+value.src);
+		}
 	});
-	//setTimeout('hideUnseenArt()', 5000);
+	setTimeout('unseenArt()', 1000);
 }
