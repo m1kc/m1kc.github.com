@@ -17,5 +17,5 @@ function hideUnseenArt()
 	$.each($('.art img'), function(key, value){
 		value.style.visibility = 'hidden';
 	});
-	setTimeout('hideUnseenArt()', 5000);
+	//setTimeout('hideUnseenArt()', 5000);
 }
