@@ -1,12 +1,29 @@
 ---
 layout: page
-title: "WinMobile 0.8.6 - картинок нет, соглашение убрать, откуда фон дива?, список нормальный сделать, всё в маркдаун, link блеать"
+title: "WinMobile 0.8.6 - картинок нет, соглашение убрать, список нормальный сделать, link блеать"
 ---
 {% include JB/setup %}
 
-<div style="height: 100px; background: rgb(0,0,0) url(/assets/img/winline.jpg) no-repeat scroll right top; text-align: right; vertical-align: bottom; font-size: 24pt; color: rgb(255, 255, 255); text-shadow: 0 1px 0 blue;">WinMobile</div>
+<div style="height: 100px; background: rgb(0,0,0) url(/assets/img/winline.jpg) no-repeat scroll right top; position: relative;"><div style="font-size: 24pt; color: rgb(255, 255, 255); text-shadow: 0 1px 0 blue; position: absolute; right: 0px; bottom: 0px;">WinMobile</div></div>
 
-<div><table style="border: medium none ; background: rgb(0, 0, 0) url(http://m1kc.ucoz.ru/style/img241.jpg) no-repeat scroll right top; width: 100%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 100px;" align="left" width=""><tbody><tr><td style="border: medium none ; text-align: right; vertical-align: bottom; letter-spacing: 0pt; word-spacing: 0pt;"><span style="font-size: 24pt; color: rgb(255, 255, 255); text-shadow: 0 1px 0 blue; ">WinMobile </span><br></td></tr></tbody></table></div><br><br>Функциональность версии 0.8.6:<br><br>+ Файл-менеджер (мой компьютер)<br>+ Смена указателей мыши<br>+ Сворачивание и разворачивание окон<br>+ Воспроизведение mp3, amr, wav и midi<br>+ Просмотр картинок (jpg и png)<br>+ Установка на фон картинок из ФС (jpg и png, с центрированием или растяжкой)<br>+ Возможность делать скриншоты прямо из программы (кнопка "камера" на SonyEricsson или "1", ищите файл /c:/other/wm_screen.jpg, не более одного скрина за раз, путь можно сменить в панели управления)<br>+ Системная информация (в панели управления)<br>+ Иконки в ФМ<br>+ Отображение размеров файлов (в меню)<br>+ Графическое PopUp-меню<br>+ Возможность создавать ярлык на любой файл<br>+ Меню "Пуск"<br>+ Конвертер JPG/PNG<br><br>Что будет:<br><br>+ Смена обоев в зависимости от времени суток<br>+ Полноценный фм (с копированием, вставкой и т.д.)<br>+ Блокнот<br><br>
+<div><table style="border: medium none ; background: rgb(0, 0, 0) url(http://m1kc.ucoz.ru/style/img241.jpg) no-repeat scroll right top; width: 100%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 100px;" align="left" width=""><tbody><tr><td style="border: medium none ; text-align: right; vertical-align: bottom; letter-spacing: 0pt; word-spacing: 0pt;"><span style="font-size: 24pt; color: rgb(255, 255, 255); text-shadow: 0 1px 0 blue; ">WinMobile </span><br></td></tr></tbody></table></div><br><br>
+
+Функциональность версии 0.8.6:
+* Файл-менеджер (мой компьютер)
+* Смена указателей мыши
+* Сворачивание и разворачивание окон
+* Воспроизведение mp3, amr, wav и midi
+* Просмотр картинок (jpg и png)
+* Установка на фон картинок из ФС (jpg и png, с центрированием или растяжкой)
+* Возможность делать скриншоты прямо из программы (кнопка "камера" на SonyEricsson или "1", ищите файл /c:/other/wm_screen.jpg, не более одного скрина за раз, путь можно сменить в панели управления)
+* Системная информация (в панели управления)
+* Иконки в ФМ
+* Отображение размеров файлов (в меню)
+* Графическое PopUp-меню
+* Возможность создавать ярлык на любой файл
+* Меню "Пуск"
+* Конвертер JPG/PNG
+
 <b>Скриншоты:</b><br><br>
 <script src="/widget/?32;http://img.ucoz.ru/_ph/1/1/21242526.jpg|http://img.ucoz.ru/_ph/1/2/21242526.png|Скриншот WinMobile v.0.8.6 (кликните для увеличения)." type="text/javascript"></script>
 <script src="/widget/?32;http://img.ucoz.ru/_ph/1/1/924305110.jpg|http://img.ucoz.ru/_ph/1/2/924305110.png|Скриншот WinMobile v.0.8.6 (кликните для увеличения)." type="text/javascript"></script>
