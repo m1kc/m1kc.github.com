@@ -1,4 +1,8 @@
-m1kc's Proprietary Software License (черновик)
+---
+layout: page
+title: m1kc's Proprietary Software License (черновик)
+---
+# m1kc's Proprietary Software License (черновик)
 
 1. Общие положения.
 
