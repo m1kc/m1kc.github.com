@@ -6,9 +6,8 @@ title: "WinMobile 0.8.6 - картинок нет, соглашение убра
 
 <div style="height: 100px; background: rgb(0,0,0) url(/assets/img/winline.jpg) no-repeat scroll right top; position: relative;"><div style="font-size: 24pt; color: rgb(255, 255, 255); text-shadow: 0 1px 0 blue; position: absolute; right: 5px; bottom: 5px;">WinMobile</div></div>
 
-<div><table style="border: medium none ; background: rgb(0, 0, 0) url(http://m1kc.ucoz.ru/style/img241.jpg) no-repeat scroll right top; width: 100%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 100px;" align="left" width=""><tbody><tr><td style="border: medium none ; text-align: right; vertical-align: bottom; letter-spacing: 0pt; word-spacing: 0pt;"><span style="font-size: 24pt; color: rgb(255, 255, 255); text-shadow: 0 1px 0 blue; ">WinMobile </span><br></td></tr></tbody></table></div><br><br>
-
 Функциональность версии 0.8.6:
+
 * Файл-менеджер (мой компьютер)
 * Смена указателей мыши
 * Сворачивание и разворачивание окон
