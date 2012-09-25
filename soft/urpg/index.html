@@ -1,0 +1,73 @@
+---
+layout: page
+title: "uRPG - всё проверить, всё в МД, картинки, видео может нахуй?, скрывалку в JQuery"
+---
+{% include JB/setup %}
+
+<script>
+function invertVisiblity(s)
+{
+ var obj = document.getElementById(s);
+ if (obj.style.display=="none") obj.style.display = "";
+ else obj.style.display="none";
+}
+</script>
+
+<center>
+<script src="/widget/?32;http://m1kc.ucoz.ru/mobile/urpg/screenshots/thumbs/screen001.png|http://m1kc.ucoz.ru/mobile/urpg/screenshots/screen001.png|Скриншот uRPG (кликните для увеличения)." type="text/javascript"></script>
+<script src="/widget/?32;http://m1kc.ucoz.ru/mobile/urpg/screenshots/thumbs/screen002.png|http://m1kc.ucoz.ru/mobile/urpg/screenshots/screen002.png|Скриншот uRPG (кликните для увеличения)." type="text/javascript"></script>
+<script src="/widget/?32;http://m1kc.ucoz.ru/mobile/urpg/screenshots/thumbs/screen003.png|http://m1kc.ucoz.ru/mobile/urpg/screenshots/screen003.png|Скриншот uRPG (кликните для увеличения)." type="text/javascript"></script>
+<script src="/widget/?32;http://m1kc.ucoz.ru/mobile/urpg/screenshots/thumbs/screen004.png|http://m1kc.ucoz.ru/mobile/urpg/screenshots/screen004.png|Скриншот uRPG (кликните для увеличения)." type="text/javascript"></script>
+<script src="/widget/?32;http://m1kc.ucoz.ru/mobile/urpg/screenshots/thumbs/screen005.png|http://m1kc.ucoz.ru/mobile/urpg/screenshots/screen005.png|Скриншот uRPG (кликните для увеличения)." type="text/javascript"></script>
+<br><br>
+<a href="javascript://" onclick="invertVisiblity('video');">Смотреть видео</a><br><br>
+<div style="display:none;" id="video">
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/25U8Wgi31xQ&amp;hl=ru_RU&amp;fs=1?rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/25U8Wgi31xQ&amp;hl=ru_RU&amp;fs=1?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+</div>
+</center>
+
+<br><br>uRPG - это новый движок для игр жанра RPG. Уже сейчас имеет приличное количество возможностей и большой потенциал. Движок быстр и нетребователен к ресурсам телефона, поддерживает анимацию воды, погодные эффекты и так далее.
+<p>
+Обновление от <b>24.08.2010</b>: теперь у героя может быть неограниченное количество союзников; оптимизирована работа движка. Кроме того, сделано несколько мелких исправлений и улучшений.<br>
+Обновление от <b>23.08.2010</b>: добавлен игровой кэш (если ресурс уже есть в кэше, он не будет загружаться по два раза, соответственно, возрастает скорость загрузки), добавлен экран загрузки. Главное же нововведение - теперь у героя и всех прочих живых существ есть пять характеристик (сила, ловкость, реакция, адреналин, выносливость), которые влияют на их атаку, защиту и прочие параметры, и шанс критического удара.<br>
+Обновление от <b>11.08.2010</b>: улучшен механизм генерации юнитов, добавлена поддержка скриптов, улучшена работа fps-контроля (если раньше у вас игра тормозила или шла чрезмерно быстро, сейчас этого не должно быть), добавлены информационные сообщения в нижней части экрана.
+<p>
+- Используйте джойстик или клавиши 2,4,6,8, чтобы перемещаться. <br /> 
+- Нажмите 5, чтобы атаковать. <br /> 
+- Подойдите к NPC с восклицательным знаком над головой и нажмите 5, чтобы начать диалог. <br /> 
+- Нажмите * (звездочку), чтобы включить или выключить дождь. <br /> 
+- Нажмите # (решетку), чтобы включить или выключить ночь. Обратите внимание, переход ото дня к ночи плавный и занимает около 10-15 секунд. <br /> 
+- Нажмите 0, чтобы принудительно включить или выключить режим кинематики. <br /> 
+- Нажмите 1, чтобы перезагрузить уровень.
+<p> 
+Сценарий "Мясорубка в джунглях". 
+<p>
+- Карта генерируется случайным образом. <br /> 
+- Ищите врага, ориентируясь по желтым стрелкам. <br /> 
+- После убийства врага в другом месте появляется новый. <br /> 
+- Ваше здоровье само восстанавливается со временем. <br /> 
+- Если в диалоге с первым NPC (он находится чуть выше того места, где вы появляетесь) выбрать третий вариант, он нападет на вас, при этом скрипт включит режим кинематики на время боя. <br />
+<p>
+<b>Движок был протестирован на следующих телефонах:</b><br>
+<ul>
+<li>SonyEricsson K770i
+<li>SonyEricsson C510i
+<li>LG GW300
+<li>SonyEricsson W800i
+<li>Nokia E52
+<li>SonyEricsson W580i
+<li>Nokia 5230
+<li>SonyEricsson K510i
+<li>SonyEricsson W700i
+<li>SonyEricsson W610i
+<li>Nokia N95-1
+<li>SonyEricsson W760i
+<li><font color="red">Nokia 5300XM - не работает</font>
+<li>HTC Touch Diamond2
+<li><font color="red">Nokia 5610 - не работает</font>
+<li>Nokia N81
+<li>SonyEricsson W595i
+<li><font color="red">Nokia 6303 classic - не работает</font>
+<li><font color="red">Samsung L310 - не работает</font>
+<li>SonyEricsson W810i
+</ul>
