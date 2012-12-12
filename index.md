@@ -6,3 +6,6 @@ title: m1kc project
 
 ## Осторожно, работает экскаватор!
 
+![](/img/eksk2.jpg)
+
+
