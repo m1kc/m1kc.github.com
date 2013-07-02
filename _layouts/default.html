@@ -43,34 +43,36 @@
     </div>
 
 	<div class="container">
-      <div class="row">
-      	{% if page.main == true %}
-<div class="hero-unit">
-<h1>&laquo;Техплан&raquo;</h1>
-<p>Центр технической инвентаризации и кадастра</p>
-</div>
-  			<div class="span7">
-				{{ content }}
-		    </div>
-		    <div class="span4 offset1">
-В результате кадастровых работ заказчик получает для представления в орган кадастрового учета следующие документы:
-- Межевой план
-- Технический план
-- Акт обследования
-		    </div>
+		{% if page.main == true %}
+			<div class="hero-unit">
+				<h1>&laquo;Техплан&raquo;</h1>
+				<p>Центр технической инвентаризации и кадастра</p>
+			</div>
+			<div class="row">
+				<div class="span7">
+					{{ content }}
+				</div>
+				<div class="span4 offset1">
+					В результате кадастровых работ заказчик получает для представления в орган кадастрового учета следующие документы:
+					- Межевой план
+					- Технический план
+					- Акт обследования
+				</div>
+			</div>
       	{% else %}
-		    <div class="span12">
-				{{ content }}
+      		<div class="row">
+				<div class="span12">
+					{{ content }}
+				</div>
 		    </div>
       	{% endif %}
-      </div>
-      <hr>
-      <footer>
-        <p class="pull-right">+7 (8412) 21-91-18</p>
-        <p class="muted">Компания &laquo;Техплан&raquo;.</p>
-        <p class="muted">Кадастровые работы в Пензе и Пензенской области. Межевание, геодезия, оформление недвижимости.</p>
-      </footer>
-    </div>
+		<hr>
+		<footer>
+			<p class="pull-right">+7 (8412) 21-91-18</p>
+			<p class="muted">Компания &laquo;Техплан&raquo;.</p>
+			<p class="muted">Кадастровые работы в Пензе и Пензенской области. Межевание, геодезия, оформление недвижимости.</p>
+		</footer>
+	</div>
 
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="/bootstrap/js/bootstrap.min.js"></script>
