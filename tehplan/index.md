@@ -1,6 +1,6 @@
 ---
 layout: default
-title: something
+title: Техплан
 main: true
 ---
 
