@@ -16,7 +16,7 @@
 		</style>
 	</head>
 	<body>
-	    <div class="navbar navbar-fixed-top">
+	 <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -44,9 +44,21 @@
 
 	<div class="container">
       <div class="row">
-        <div class="span12">
-{{ content }}
-        </div>
+      	{% if page.main == true %}
+  			<div class="span7">
+				{{ content }}
+		    </div>
+		    <div class="span4 offset1">
+В результате кадастровых работ заказчик получает для представления в орган кадастрового учета следующие документы:
+- Межевой план
+- Технический план
+- Акт обследования
+		    </div>
+      	{% else %}
+		    <div class="span12">
+				{{ content }}
+		    </div>
+      	{% endif %}
       </div>
       <hr>
       <footer>
